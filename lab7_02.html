@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(num1, num2) {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var ops = document.getElementById("ops").value;
+            document.getElementById("result").value = eval(num1 +ops+ num2);
+             
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <input type="text" id="num1">
+        <select id="ops">
+            <option value="+" id = "sum" size = "10" >+ 
+            <option value="-" id = "minus"size = "10">- 
+            <option value="*" id = "add" size = "10" >* 
+            <option value="/" id = "divi" size = "10">/ 
+        </select >
+        <input type="text" id="num2"> =
+        <input type="text" id="result">
+
+        <input type="button" id="click" value="Go Go" onclick="cal()">
+    </form>
+</body>
+
+</html>
